@@ -1,0 +1,73 @@
+{
+  "name": "@chimeraant/eslint-config-chimeraant",
+  "version": "0.0.0-semantic-release",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "fix": "format-package --write && eslint --max-warnings=0 index.js --fix",
+    "lint": "format-package --check && eslint --max-warnings=0 index.js",
+    "secret:set": "gh secret set NPM_TOKEN"
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 100
+        }
+      ]
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-fp-ts": "^0.3.2",
+    "eslint-plugin-functional": "^4.4.1",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "eslint": ">= 7",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-fp-ts": "^0.3.2",
+    "eslint-plugin-functional": "^4.2.2",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "format-package": "^7.0.0",
+    "pnpm": "^7.13.4",
+    "typescript-language-server": "^2.0.1"
+  }
+}
