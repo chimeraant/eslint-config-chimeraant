@@ -2,6 +2,7 @@
   "name": "eslint-config-chimeraant",
   "version": "0.0.0-semantic-release",
   "license": "MIT",
+  "repository": "https://github.com/chimeraant/eslint-config-chimeraant",
   "main": "index.js",
   "files": [
     "index.js"
@@ -9,7 +10,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "repository": "https://github.com/chimeraant/eslint-config-chimeraant",
   "scripts": {
     "fix": "format-package --write && eslint --max-warnings=0 index.js --fix",
     "lint": "format-package --check && eslint --max-warnings=0 index.js",
