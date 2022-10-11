@@ -71,6 +71,7 @@
   "devDependencies": {
     "eslint": "^8.25.0",
     "format-package": "^7.0.0",
+    "husky": "^8.0.1",
     "pnpm": "^7.13.4",
     "typescript-language-server": "^2.0.1"
   }
