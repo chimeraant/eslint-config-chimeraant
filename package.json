@@ -2,7 +2,7 @@
   "name": "eslint-config-chimeraant",
   "version": "0.0.0-semantic-release",
   "license": "MIT",
-  "repository": "https://github.com/chimeraant/eslint-config-chimeraant",
+  "repository": "https://github.com/chimeraant/eslint-config-chimeraant.git",
   "main": "index.js",
   "files": [
     "index.js"
