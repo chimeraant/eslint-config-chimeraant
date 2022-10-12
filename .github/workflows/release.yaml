@@ -45,7 +45,6 @@ jobs:
     - name: Lint source code
       run: pnpm lint
 
-    # https://github.com/semantic-release/semantic-release/issues/1724#issuecomment-831428026
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
