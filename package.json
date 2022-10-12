@@ -8,8 +8,7 @@
     "index.js"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "tag": "latest"
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "fix": "format-package --write && eslint --max-warnings=0 index.js --fix",
