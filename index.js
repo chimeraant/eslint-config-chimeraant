@@ -51,4 +51,12 @@ module.exports = {
       { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
     ],
   },
+  overrides: [
+    {
+      files: 'src/bin.ts',
+      rules: {
+        'functional/no-expression-statement': ['error', { ignorePattern: 'main' }],
+      },
+    },
+  ],
 };
