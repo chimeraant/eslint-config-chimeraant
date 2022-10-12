@@ -55,7 +55,7 @@ module.exports = {
     {
       files: 'src/bin.ts',
       rules: {
-        'functional/no-expression-statement': ['error', { ignorePattern: '^main$' }],
+        'functional/no-expression-statement': ['error', { ignorePattern: '^main\\(\\);$' }],
       },
     },
   ],
