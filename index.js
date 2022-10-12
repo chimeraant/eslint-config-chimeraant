@@ -23,18 +23,12 @@ module.exports = {
   rules: {
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/no-shadow': 'error',
-    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/unbound-method': 'off',
     'functional/functional-parameters': 'off',
     'functional/no-mixed-type': 'off',
     'prettier/prettier': ['error', { singleQuote: true, printWidth: 100 }],
     'simple-import-sort/exports': 'error',
     'simple-import-sort/imports': 'error',
-    'unused-imports/no-unused-imports-ts': 'error',
-    'unused-imports/no-unused-vars': [
-      'error',
-      { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
-    ],
     curly: ['error', 'all'],
     eqeqeq: 'error',
     'max-len': ['error', { code: 100 }],
@@ -48,5 +42,13 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     'prefer-destructuring': 'error',
     'prefer-template': 'error',
+
+    // https://github.com/sweepline/eslint-plugin-unused-imports#usage
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports-ts': 'error',
+    'unused-imports/no-unused-vars': [
+      'error',
+      { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+    ],
   },
 };
