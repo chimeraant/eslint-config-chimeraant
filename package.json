@@ -8,8 +8,8 @@
     "index.js"
   ],
   "scripts": {
-    "fix": "eslint --max-warnings=0 index.js --fix",
-    "lint": "eslint --max-warnings=0 index.js"
+    "lint": "eslint --max-warnings=0 . --ignore-path .gitignore",
+    "lint:fix": "pnpm lint --fix"
   },
   "eslintConfig": {
     "env": {
