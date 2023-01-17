@@ -7,7 +7,6 @@ module.exports = {
     'simple-import-sort',
     'unused-imports',
   ],
-  ignorePatterns: ['node_modules'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['**/tsconfig.**'],
@@ -49,7 +48,14 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     curly: ['error', 'all'],
     eqeqeq: 'error',
-    'max-len': ['error', { code: 100, ignoreUrls: true }],
+    'max-len': [
+      'error',
+      {
+        code: 100,
+        ignoreUrls: true,
+        ignorePattern: '(^export|^\\s*readonly|^import)',
+      },
+    ],
     'no-else-return': 'error',
     'no-undef-init': 'error',
     'no-unsafe-optional-chaining': 'error',
