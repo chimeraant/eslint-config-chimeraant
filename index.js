@@ -39,6 +39,7 @@ module.exports = {
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-invalid-void-type': 'off',
     '@typescript-eslint/no-loop-func': 'error',
+    '@typescript-eslint/no-misused-promises': 'off',
     '@typescript-eslint/no-redundant-type-constituents': 'error',
     '@typescript-eslint/no-shadow': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
