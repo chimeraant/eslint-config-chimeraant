@@ -30,6 +30,26 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
   ],
+  overrides: [
+    {
+      files: 'scripts/**',
+      rules: {
+        'functional/no-expression-statement': 'off',
+      },
+    },
+    {
+      files: '**/*.bun.ts',
+      rules: {
+        'import/no-nodejs-modules': 'off',
+      },
+    },
+    {
+      files: '**/*.node.ts',
+      rules: {
+        'import/no-nodejs-modules': 'off',
+      },
+    },
+  ],
   rules: {
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/consistent-type-exports': 'error',
@@ -52,6 +72,7 @@ module.exports = {
     '@typescript-eslint/unbound-method': 'off',
     'fp-ts/no-module-imports': ['error', { allowTypes: true }],
     'functional/functional-parameters': 'off',
+    'functional/no-conditional-statement': 'off',
     'functional/no-mixed-type': 'off',
     'import/consistent-type-specifier-style': 'error',
     'import/extensions': 'error',
