@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "eslint": "^8.32.0",
-    "pnpm": "^7.25.0",
+    "pnpm": "^7.33.4",
     "semantic-release": "^20.0.2",
     "typescript-language-server": "^2.3.0"
   }
